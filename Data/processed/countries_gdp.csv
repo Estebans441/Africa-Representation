@@ -1,59 +1,59 @@
-Country,Continent,Average Population,Average GDP (USD)
-Algeria,North Africa,43467079.0,169560005337.118
-Angola,Central Africa,32382358.2,73948495339.45601
-Benin,West Africa,11967584.0,15879493885.362
-Botswana,South Africa,2326456.0,17561506370.546
-Burkina Faso,West Africa,20637344.6,17724813941.024002
-Burundi,East Africa,11734935.0,2748518942.878
-Cameroon,Central Africa,26213938.4,42019598321.18
-Cape Verde,West Africa,553267.8,2151337516.798
-Central African Republic,Central Africa,4796490.6,2333623685.0620003
-Chad,Central Africa,16229521.8,11550729240.834002
-Democratic Republic of the Congo,Central Africa,88238850.0,52295584784.124
-Djibouti,East Africa,979921.4,3214157612.326
-Egypt,North Africa,101527707.2,373300955076.804
-Equatorial Guinea,Central Africa,1376154.8,11728721101.206
-Eritrea,East Africa,3540982.4,
-Eswatini,South Africa,1180934.0,4543583862.303999
-Ethiopia,East Africa,113552741.6,105176978785.824
-Gabon,Central Africa,2197094.2,18069199033.408
-Gambia,West Africa,2388449.4,1921585546.9099998
-Ghana,West Africa,30801348.4,71535038374.32199
-Guinea,West Africa,12951082.0,15359458986.963999
-Guinea-Bissau,West Africa,1945022.8,1529620715.066
-Ivory Coast,West Africa,26037942.2,
-Kenya,East Africa,53318467.4,103272517771.43199
-Lesotho,South Africa,2139094.6,2407377860.458
-Liberia,West Africa,5004632.0,3458476190.0
-Libya,North Africa,6768106.0,55659832238.395996
-Madagascar,East Africa,27368001.2,14085172176.728
-Malawi,East Africa,18937712.0,11745831492.806002
-Mali,West Africa,19966304.2,17990630240.046
-Mauritania,West Africa,4583503.0,8863373875.254002
-Mauritius,East Africa,1272353.8,12989564947.032
-Mayotte,East Africa,270079.8,
-Morocco,North Africa,36729368.6,130931422298.20601
-Mozambique,East Africa,30811758.8,15604109079.268
-Namibia,South Africa,2524849.0,12372284772.522
-Niger,West Africa,23813777.4,13670779724.244
-Nigeria,West Africa,203792775.2,449335064309.882
-Republic of the Congo,Central Africa,5452174.6,12977058176.220001
-Reunion,East Africa,892195.4,
-Rwanda,East Africa,12781882.0,10904838076.704
-SADR,North Africa,588924.4,
-"Saint Helena, Ascension and Tristan da Cunha",West Africa,6068.2,
-Sao Tome and Principe,Central Africa,217523.6,477112801.068
-Senegal,West Africa,16565945.6,25260955511.166
-Seyshelles,East Africa,98082.6,1458302712.464
-Sierra Leone,West Africa,7903492.4,4088835597.0980005
-Somalia,East Africa,15631325.0,6995621123.536
-South Africa,South Africa,58861529.0,391039006627.786
-South Sudan,East Africa,11345623.4,
-Sudan,North Africa,43290453.6,35519641769.762
-Tanzania,East Africa,58983331.6,66092821370.804
-Togo,West Africa,8196996.4,7574338143.916
-Tunisia,North Africa,11759720.4,44096571566.65401
-Uganda,East Africa,44987787.8,38390010868.53
-Union of the Comors,East Africa,861715.4,1229493012.7359998
-Zambia,East Africa,18151585.4,23932583292.042
-Zimbabwe,East Africa,14825733.2,25309459502.581997
+Country Name,Continent,Average Population,Average GDP (USD)
+Algeria,North Africa,41805256.6,164509221135.036
+Angola,Central Africa,30337476.2,63231336687.026
+Benin,West Africa,11337707.4,13765672259.14
+Botswana,South Africa,2231954.2,15981187297.41
+Burkina Faso,West Africa,19485863.8,15388430551.598001
+Burundi,East Africa,11010508.0,2652291215.764
+Cameroon,Central Africa,24903789.4,38066188762.03001
+Cape Verde,West Africa,540562.8,2039332111.0359998
+Central African Republic,Central Africa,4641586.8,2133273903.25
+Chad,Central Africa,15255935.2,10673537503.038
+Democratic Republic of the Congo,Central Africa,82799385.6,44643013621.518
+Djibouti,East Africa,951392.0,2910185617.458
+Egypt,North Africa,97425004.8,309177955818.82404
+Equatorial Guinea,Central Africa,1285750.2,11600405280.078
+Eritrea,East Africa,3436942.0,
+Eswatini,South Africa,1161000.0,4266807544.254
+Ethiopia,East Africa,107851263.4,88781434204.434
+Gabon,Central Africa,2090448.4,15601937355.506
+Gambia,West Africa,2248652.2,1657188048.5540001
+Ghana,West Africa,29452185.0,64450167444.908
+Guinea,West Africa,12256000.2,11679670315.105999
+Guinea-Bissau,West Africa,1851845.0,1381041759.9760003
+Ivory Coast,West Africa,24771882.6,
+Kenya,East Africa,50816997.2,90018115284.146
+Lesotho,South Africa,2100219.2,2306236267.688
+Liberia,West Africa,4762479.6,3314291360.0
+Libya,North Africa,6635066.2,61963587620.717995
+Madagascar,East Africa,25934270.4,13188213323.420002
+Malawi,East Africa,17918703.2,9963113601.796001
+Mali,West Africa,18813694.4,16241654511.05
+Mauritania,West Africa,4345050.6,7428809777.646001
+Mauritius,East Africa,1265775.4,13376149077.317999
+Mayotte,East Africa,256326.0,
+Morocco,North Africa,35800692.2,121544492394.124
+Mozambique,East Africa,29100942.4,13909673826.762
+Namibia,South Africa,2426441.0,12084973633.462
+Niger,West Africa,22052767.8,12210650873.044
+Nigeria,West Africa,193479855.2,421770079568.75793
+Republic of the Congo,Central Africa,5181203.2,11643538508.689999
+Reunion,East Africa,879356.6,
+Rwanda,East Africa,12148995.8,9620852835.888
+SADR,North Africa,560648.2,
+"Saint Helena, Ascension and Tristan da Cunha",West Africa,6007.4,
+Sao Tome and Principe,Central Africa,209151.4,406667922.838
+Senegal,West Africa,15646491.2,22217617174.547997
+Seyshelles,East Africa,96727.2,1481029321.2599998
+Sierra Leone,West Africa,7571588.4,3961352816.262
+Somalia,East Africa,14815720.2,6073400001.244
+South Africa,South Africa,57385934.0,367068800587.964
+South Sudan,East Africa,10947529.6,
+Sudan,North Africa,41333861.6,64873710019.8
+Tanzania,East Africa,55533255.6,57429832550.20799
+Togo,West Africa,7796846.2,6767661559.311999
+Tunisia,North Africa,11499774.2,42730841311.966
+Uganda,East Africa,41964900.4,33165814693.044
+Union of the Comors,East Africa,823308.8,1139826285.116
+Zambia,East Africa,17114074.8,22912565326.961998
+Zimbabwe,East Africa,14338743.6,23126314457.264

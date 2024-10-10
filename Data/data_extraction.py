@@ -5,10 +5,9 @@ import pathlib
 # Extract data From Banco Mundial
 data_dir = os.path.join(pathlib.Path(__file__).parent.absolute(), 'raw')
 processed_dir = os.path.join(pathlib.Path(__file__).parent.absolute(), 'processed')
-data_save = os.path.join(pathlib.Path(__file__).parent.absolute(), 'final')
-
 """
-Banco mundial data
+"""
+ # Banco mundial data
 """
 # Data from https://datos.bancomundial.org/indicador/SP.POP.TOTL?locations=A9
 countries_metadata = pd.read_excel(
@@ -22,7 +21,7 @@ countries_population = pd.read_excel(
 )
 
 # Create a column with the average population
-countries_population['Average Population'] = countries_population[['2018', '2019', '2020', '2021', '2022']].mean(axis=1)
+countries_population['Average Population'] = countries_population[['2016', '2017','2018', '2019', '2020']].mean(axis=1)
 
 # Drop rows with country name and region as NaN
 countries_metadata.dropna(subset=['Country Name'], inplace=True)
@@ -33,11 +32,11 @@ africa_countries = countries_metadata[countries_metadata['Region'].str.contains(
 
 # Rename column income group
 africa_countries = africa_countries.rename(columns={'Income_Group': 'Income group'})
-countries_population = countries_population.rename(columns={'2022' : 'Population 2022'})
+countries_population = countries_population.rename(columns={'2020' : 'Population 2020'})
 
 # Select relevant columns
 africa_countries = africa_countries[['Country Name', 'Country Code', 'Income group', 'Region']]
-countries_population = countries_population[['Country Code', 'Population 2022', 'Average Population']]
+countries_population = countries_population[['Country Code', 'Population 2020', 'Average Population']]
 
 # Merge with population data
 africa_countries = africa_countries.merge(countries_population, on='Country Code', how='left')
@@ -47,7 +46,7 @@ africa_countries = africa_countries.sort_values('Country Name')
 africa_countries.to_csv(os.path.join(processed_dir, 'africa_countries.csv'), index=False)
 
 """
-Data Africa
+# Data Africa
 """
 # Data from https://www.kaggle.com/datasets/ivanbyone/population-and-gdp-africa
 countries_gdp = pd.read_csv(os.path.join(data_dir, 'Data_Africa.csv'))
@@ -67,21 +66,24 @@ countries_gdp.columns = [f'{col[0]}_{col[1]}' for col in countries_gdp.columns]
 countries_gdp = countries_gdp.reset_index()
 
 # Create columns with the average population and GDP over the last 5 years
-years = ['2018', '2019', '2020', '2021', '2022']
+years = ['2016', '2017', '2018', '2019', '2020']
 population_columns = [f'Population_{year}' for year in years]
 gdp_columns = [f'GDP (USD)_{year}' for year in years]
 
 countries_gdp['Average Population'] = countries_gdp[population_columns].mean(axis=1)
 countries_gdp['Average GDP (USD)'] = countries_gdp[gdp_columns].mean(axis=1)
 
+# Rename column Country to Country Name
+countries_gdp = countries_gdp.rename(columns={'Country': 'Country Name'})
+
 # Select the relevant columns
-countries_gdp = countries_gdp[['Country', 'Continent', 'Average Population', 'Average GDP (USD)']]
+countries_gdp = countries_gdp[['Country Name', 'Continent', 'Average Population', 'Average GDP (USD)']]
 
 # Save the result to a CSV file
 countries_gdp.to_csv(os.path.join(processed_dir, 'countries_gdp.csv'), index=False)
 
 """
-Economic outlook
+# Economic outlook
 """
 # https://www.kaggle.com/datasets/waalbannyantudre/african-economic-outlook
 # Download URL:,http://dataportal.opendataforafrica.org/mhuiccf/african-economic-outlook-january-2019
@@ -131,8 +133,15 @@ economic_outlook = economic_outlook[important_columns]
 
 # Save the result to CSV
 economic_outlook.to_csv(os.path.join(processed_dir, 'economic_outlook.csv'), index=False)
+"""
 
 """
-DATA MERGING
+# HDR DATA
 """
+# Data from https://hdr.undp.org/data-center/documentation-and-downloads (HDR Data)
+hdr_data = pd.read_excel(os.path.join(data_dir, 'hdr-data.xlsx'))
+
+
+
+hdr_data.to_csv(os.path.join(processed_dir, 'hdr_data.csv'), index=False)
 
